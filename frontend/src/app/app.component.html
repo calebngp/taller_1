@@ -1,0 +1,23 @@
+<div class="container">
+  <header>
+    <h1>{{ title }}</h1>
+  </header>
+  
+  <main>
+    <div class="card">
+      <h2>Estado de Conexión</h2>
+      <p class="message">{{ message || 'Conectando...' }}</p>
+      <button (click)="fetchHello()">Actualizar</button>
+    </div>
+    
+    <div class="info">
+      <h3>Información del Proyecto</h3>
+      <ul>
+        <li>Framework: Angular 17</li>
+        <li>Backend: Spring Boot (puerto 8080)</li>
+        <li>Frontend: Angular (puerto 4200)</li>
+      </ul>
+    </div>
+  </main>
+</div>
+
